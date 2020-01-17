@@ -1,9 +1,11 @@
 def map_to_negative(source_array)
+  new_array = []
   counter = 0
   while counter < source_array.length
-    source_array[counter] *= -1
+    new_array[counter] *= -1
     counter += 1
   end
+  new_array
 end
 
 def map_to_no_change(source_array)
