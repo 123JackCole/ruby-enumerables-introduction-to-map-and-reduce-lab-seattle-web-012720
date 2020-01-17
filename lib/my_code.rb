@@ -51,7 +51,7 @@ end
 def reduce_to_all_true(source_array)
   total = 0
   counter = 0
-  while counter < source_array
+  while counter < source_array.length
     total += source_array[counter]
     counter += 1
   end
@@ -59,7 +59,7 @@ end
 
 def reduce_to_any_true(source_array)
   counter = 0
-  while counter < source_array
+  while counter < source_array.length
     if source_array[counter] == false
       return false
     end
